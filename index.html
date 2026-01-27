@@ -8,143 +8,191 @@
     <title>Marketing Page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./script.js"></script>
+    <link href="https://db.onlinewebfonts.com/c/cd7b05ba22e73021e0a390f532a72589?family=PP+Telegraf" rel="stylesheet">
 
 </head>
 
-<body class="grid grid-rows-[1fr,auto] min-h-screen gap-[180px]">
-    <div class="flex flex-col mx-auto gap-[180px]">
-        <section class="">
-            <div class="flex flex-col justify-center items-center gap-[112px]">
-                <div
-                    class=" mt-[46.25px] py-[8px] pr-[8px] pl-[32px] w-[644.09px] h-[88px] gap-[80px] rounded-[102px] border-[1px] border-[#FFFFFF33] backdrop-blur-[80px] 
-                    bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
+<body style="max-width: full;" class="grid grid-rows-[1fr,auto] min-h-screen mx-auto gap-[180px] sm:gap-[80px]">
+    <div class="flex flex-col m-auto md:gap-[180px] gap-[80px] overflow-hidden w-screen">
+        <section>
+            <div class="container mx-auto max-w-[1920px] flex flex-col items-center gap-16 lg:px-[280px] px-[24px] ">
 
-                    <div class=" flex items-center justify-center fixed gap-[80px]">
-                        <img src="./images/Group 4.svg" class="w-[169.09375] h-[40.5303955078125]" alt="">
-                        <div
-                            class="flex flex-row w-[355px] h-[72px] px-[32px] py-[20px] gap-[10px] rounded-[70px]  cursor-pointer justify-center items-center custom-inset-shadow backdrop-blur-[34px] hover:scale-105 transition-all duration-500">
-                            <h1 class="font-bold text-[20px] leading-[150%] text-[#FFFFFF]">Book a
-                                Free
-                                Discovery
-                                Call</h1>
-                            <img src="./images/Vector.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col justify-center items-center w-[1360px] h-[277px] gap-[32px]">
-                    <p class="font-normal text-[24px] leading-[100%] text-[#FFFFFF]">Welcome to MVP
-                        Reactors.com</p>
-                    <div class="flex flex-col gap-[16px] items-center justify-center">
-                        <h1 class="font-extrabold text-[64px] leading-[100%] text-[#FFFFFF]">From
-                            Idea
-                            to MVP in Just 3
-                            Days 😜</h1>
-                        <p class="font-normal text-[32px] leading-[100%] text-[#FFFFFF]">Powered by
-                            AI and build
-                            for bold Founders</p>
-                    </div>
-                    <div
-                        class="flex flex-row w-[355px] h-[72px] gap-[10px] px-[32px] py-[20px] rounded-[70px] justify-center items-center cursor-pointer custom-inset-shadow backdrop-blur-[34px] hover:scale-105 transition-all duration-500">
-                        <h1 class="font-bold text-[20px] leading-[150%] text-[#FFFFFF]">Book a
-                            Free
-                            Discovery
-                            Call</h1>
+                <div class="mt-8 md:mt-12 w-full max-w-[644px] flex justify-between items-center
+                   rounded-[61px] md:rounded-[102px] border border-[#FFFFFF33]
+                   px-6 md:px-8 py-2 md:py-4 backdrop-blur-[80px]
+                   bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),
+                       linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),
+                       linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),
+                       linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
+
+                    <img src="./images/Group 4.svg" class="h-6 md:h-10 w-auto" alt="logo">
+
+                    <button class="flex items-center gap-2 px-4 md:px-8 py-3 md:py-5
+                       rounded-[70px] custom-inset-shadow backdrop-blur-[34px]
+                       hover:scale-105 transition-all duration-500">
+                        <span class="font-bold text-sm md:text-base text-white">
+                            Book a Free Discovery Call
+                        </span>
                         <img src="./images/Vector.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-8">
+                    <p class="font-normal md:text-[24px] leading-[100%] text-[16px] text-white">
+                        Welcome to MVPReactors.com
+                    </p>
+
+                    <div class="flex flex-col gap-4">
+                        <h1
+                            class="font-telegraph font-extrabold text-[32px] leading-[130%] md:leading-[100%] md:text-[64px] text-white">
+                            From Idea to MVP in Just 3 Days 😜
+                        </h1>
+                        <p class="font-normal md:text-[32px] leading-[100%] text-[18px] text-white">
+                            Powered by AI and built for bold Founders
+                        </p>
                     </div>
+
+                    <button class="flex items-center max-w-[644px] gap-2 px-8 py-5 rounded-[70px]
+                       custom-inset-shadow backdrop-blur-[34px]
+                       hover:scale-105 transition-all duration-500">
+                        <span class="font-bold text-base md:text-lg text-white">
+                            Book a Free Discovery Call
+                        </span>
+                        <img src="./images/Vector.svg" alt="">
+                    </button>
                 </div>
                 <img src="https://devshayan.github.io/mvp-reactors-host/assets/text-CLkxjevk.png"
-                    class="h-[484px] -mt-[112px] -mb-[112px]" alt="">
+                    class="w-full -mt-16 md:-mt-28 -mb-14 md:-mb-24" alt="">
+            </div>
+        </section>
 
-                <div class="flex flex-row gap-[52px] -mt[112px]">
-                    <div
-                        class="flex flex-col justify-center items-center text-center w-[418.67px] h-[267px] flex-1
-                        rounded-[32px] p-[32px] gap-[16px] backdrop-blur-[34px] border-solid border-[1px]
-                        border-[#FFFFFF33] bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
-                        ">
-                        <p class="font-normal text-[24px] leading-[100%] text-[#FFFFFF]"> Day- 0</p>
-                        <h3 class="font-extrabold text-[32px] leading-[120%] text-[#FFFFFF]">Book & Scope</h3>
-                        <p class="font-normal text-[24px] leading-[150%] text-[#CBD5E1]">We define your
-                            MVP’s
-                            must-haves on a quick
-                            call.</p>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center items-center text-center w-[418.67px] h-[267px] flex-1
-                        rounded-[32px] p-[32px] gap-[16px] backdrop-blur-[34px] border-solid border-[1px]
-                        border-[#FFFFFF33] bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
-                        ">
-                        <p class="font-normal text-[24px] leading-[100%] text-[#FFFFFF]"> Day 1-2</p>
-                        <h3 class="font-extrabold text-[32px] leading-[120%] text-[#FFFFFF]">Build & Review</h3>
-                        <p class="font-normal text-[24px] leading-[150%] text-[#CBD5E1]">Our team builds while you
-                            relax. On Day 2, we show you a live demo.</p>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center items-center text-center w-[418.67px] h-[267px] flex-1
-                        rounded-[32px] p-[32px] gap-[16px] backdrop-blur-[34px] border-solid border-[1px]
-                        border-[#FFFFFF33] bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
-                        ">
-                        <p class="font-normal text-[24px] leading-[100%] text-[#FFFFFF]"> Day-3</p>
-                        <h3 class="font-extrabold text-[32px] leading-[120%] text-[#FFFFFF]">Launch & Handoff</h3>
-                        <p class="font-normal text-[24px] leading-[150%] text-[#CBD5E1]">our MVP goes live. You get
-                            everything — code & clarity..</p>
-                    </div>
+        <section class="px-[24px] ">
+            <div class=" mx-auto flex flex-col md:flex-row gap-[24px] -mt-[112px]">
+
+                <div class="flex flex-col justify-center items-center text-center
+                   rounded-[32px] p-[40px] sm:p-[32px] gap-4 backdrop-blur-[34px]
+                   border border-[#FFFFFF33]
+                   bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),
+                       linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),
+                       linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),
+                       linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
+
+                    <p class="text-lg sm:text-xl text-white">Day 0</p>
+                    <h3 class="font-extrabold text-2xl sm:text-3xl text-white">
+                        Book & Scope
+                    </h3>
+                    <p class="text-base sm:text-lg text-[#CBD5E1]">
+                        We define your MVP’s must-haves on a quick call.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center
+                   rounded-[32px] p-[40px] sm:p-[32px] gap-4 backdrop-blur-[34px]
+                   border border-[#FFFFFF33]
+                   bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),
+                       linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),
+                       linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),
+                       linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
+
+                    <p class="text-lg sm:text-xl text-white">Day 1–2</p>
+                    <h3 class="font-extrabold text-2xl sm:text-3xl text-white">
+                        Build & Review
+                    </h3>
+                    <p class="text-base sm:text-lg text-[#CBD5E1]">
+                        Our team builds while you relax. On Day 2, we show you a live demo.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center
+                   rounded-[32px] p-[40px] sm:p-[32px] gap-4 backdrop-blur-[34px]
+                   border border-[#FFFFFF33]
+                   bg-[linear-gradient(0deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)),
+                       linear-gradient(180deg,rgba(133,124,255,0.3)_0%,rgba(80,74,153,0)_32.45%),
+                       linear-gradient(114.89deg,rgba(133,124,255,0.3)_3.24%,rgba(80,74,153,0)_27.34%),
+                       linear-gradient(286.96deg,rgba(133,124,255,0.3)_1.21%,rgba(80,74,153,0)_20.66%)]">
+
+                    <p class="text-lg sm:text-xl text-white">Day 3</p>
+                    <h3 class="font-extrabold text-2xl sm:text-3xl text-white">
+                        Launch & Handoff
+                    </h3>
+                    <p class="text-base sm:text-lg text-[#CBD5E1]">
+                        Your MVP goes live. You get everything — code & clarity.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="">
-            <div class="flex flex-col items-center justify-center gap-[48px]">
-                <h1 class="font-extrabold text-[48px] leading-[100%] text-[#FFFFFF]">What we Offers</h1>
-                <div class="flex flex-col items-center justify-center gap-[80px] ">
-                    <div class="flex flex-row gap-[80px]">
-                        <div class="flex flex-col w-[400px]  gap-[24px]">
+
+        <section class="px-[24px] xl:px-[280px]">
+            <div class="mx-auto flex flex-col items-center justify-center gap-[32px] md:gap-[48px]">
+                <h1 class="font-extrabold text-[48px] leading-[100%] text-[#FFFFFF] text-center">What we Offers</h1>
+                <div class=" flex flex-col items-center justify-center gap-[40px] md:gap-[80px] ">
+                    <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[80px]">
+                        <div class="flex flex-col md:items-start items-center  gap-[24px]">
                             <img src="./images/Helix.svg" class="h-[56px] w-[56px]" alt="">
-                            <h1 class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF]">Login, dashboard, and
+                            <h1
+                                class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF] md:text-start text-center">
+                                Login, dashboard, and
                                 your key feature
                                 pages</h1>
-                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1]">We define your MVP’s
+                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1] md:text-start text-center">
+                                We define your MVP’s
                                 must-haves on a quick call.</p>
                         </div>
-                        <div class="flex flex-col w-[400px]  gap-[24px]">
+                        <div class="flex flex-col md:items-start items-center gap-[24px]">
                             <img src="./images/Icosahedron.svg" class="h-[56px] w-[56px]" alt="">
-                            <h1 class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF]">Signup, login, logout —
+                            <h1
+                                class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF] md:text-start text-center">
+                                Signup, login, logout —
                                 secure and fast</h1>
-                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1]">We define your MVP’s
+                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1] md:text-start text-center">
+                                We define your MVP’s
                                 must-haves on a quick call.</p>
                         </div>
-                        <div class="flex flex-col w-[400px]  gap-[24px]">
+                        <div class="flex flex-col md:items-start items-center gap-[24px]">
                             <img src="./images/Mask Group.svg" class="h-[56px] w-[56px]" alt="">
-                            <h1 class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF]">Stripe, OpenAI, or your
+                            <h1
+                                class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF] md:text-start text-center">
+                                Stripe, OpenAI, or your
                                 must-have API</h1>
-                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1]">We define your MVP’s
+                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1] md:text-start text-center">
+                                We define your MVP’s
                                 must-haves on a quick call.</p>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-[80px]">
-                        <div class="flex flex-col w-[400px]  gap-[24px]">
+                    <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[80px]">
+                        <div class="flex flex-col  lg:items-start items-center  gap-[24px]">
                             <img src="./images/Mask Group (2).svg" class="h-[56px] w-[56px]" alt="">
-                            <h1 class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF]">We build while you
+                            <h1
+                                class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF] md:text-start text-center">
+                                We build while you
                                 focus on launch strategy</h1>
-                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1]">We define your MVP’s
+                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1] md:text-start text-center">
+                                We define your MVP’s
                                 must-haves on a quick call.</p>
                         </div>
-                        <div class="flex flex-col w-[400px] gap-[24px]">
+                        <div class="flex flex-col lg:items-start items-center gap-[24px]">
                             <img src="./images/Cylinder 2.svg" class="h-[56px] w-[56px]" alt="">
-                            <h1 class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF]">Free setup on Vercel or
+                            <h1
+                                class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF] md:text-start text-center">
+                                Free setup on Vercel or
                                 custom server — ready by Day 3</h1>
-                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1]">We define your MVP’s
+                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1] md:text-start text-center">
+                                We define your MVP’s
                                 must-haves on a quick call.</p>
                         </div>
-                        <div class="flex flex-col w-[400px]  gap-[24px]">
+                        <div class="flex flex-col lg:items-start items-center gap-[24px]">
                             <img src="./images/Thorus 2.svg" class="h-[56px] w-[56px]" alt="">
-                            <h1 class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF]">Stripe, OpenAI, or your
+                            <h1
+                                class="font-extrabold text-[28px] leading-[120%] text-[#FFFFFF] md:text-start text-center">
+                                Stripe, OpenAI, or your
                                 must-have API</h1>
-                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1]">We define your MVP’s
+                            <p class="font-normal text-[20px] leading-[150%] text-[#CBD5E1] md:text-start text-center">
+                                We define your MVP’s
                                 must-haves on a quick call.</p>
                         </div>
                     </div>
                     <div
-                        class="flex flex-row w-[404px] h-[76px] px-[32px] py-[20px] gap-[10px] rounded-[70px] cursor-pointer custom-inset-shadow backdrop-blur-[34px] hover:scale-105 transition-all duration-500">
+                        class="flex flex-row items-center justify-center w-[404px] h-[76px] px-[32px] py-[20px] gap-[10px] rounded-[70px] cursor-pointer custom-inset-shadow backdrop-blur-[34px] hover:scale-105 transition-all duration-500">
                         <h1 class="font-bold text-[20px] leading-[150%] text-[#FFFFFF]">Book a
                             Free
                             Discovery
@@ -155,15 +203,16 @@
             </div>
         </section>
 
-        <section>
-            <div class="flex flex-col items-center justify-center gap-[80px]">
-                <h1 class="font-extrabold text-[48px] leadding-[100%] text-[#FFFFFF]">Real Results from Real Founders
+        <section class="px-[24px] xl:px-[280px]">
+            <div class=" mx-auto flex flex-col items-center justify-center gap-[80px]">
+                <h1 class="font-extrabold text-[48px] leadding-[100%] text-[#FFFFFF] text-center">Real Results from Real
+                    Founders
                 </h1>
-                <div class="flex flex-col gap-[32px]">
-                    <div class="flex flex-row gap-[32px] ">
-                        <div class="flex flex-row gap-[32px]">
+                <div class="grid grid-rows-1 md:grid-rows-2 gap-[32px]">
+                    <div class="flex flex-row gap-[32px] items-center justify-center">
+                        <div class="flex md:flex-row flex-col gap-[32px] group">
                             <div
-                                class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
+                                class=" card flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
                                 <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
                                     Founder</p>
                                 <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
@@ -177,7 +226,7 @@
                                     loved the speed.”</p>
                             </div>
                             <div
-                                class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
+                                class=" card flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
                                 <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
                                     Founder</p>
                                 <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
@@ -191,51 +240,7 @@
                                     loved the speed.”</p>
                             </div>
                             <div
-                                class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
-                                <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
-                                    Founder</p>
-                                <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
-                                <h1 class="font-extrabold text-[20px] leading-[120%] text-[#FFFFFF]">Raised $50K angel
-                                    investment
-                                    within 10 days.</h1>
-                                <p class="font-normal text-[14px] leading-[150%] text-[#FFFFFF] w-[544px]">“I pitched my
-                                    MVP the
-                                    same week I hired them. It worked flawlessly, and
-                                    investors
-                                    loved the speed.”</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-row gap-[32px]">
-                            <div
-                                class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
-                                <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
-                                    Founder</p>
-                                <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
-                                <h1 class="font-extrabold text-[20px] leading-[120%] text-[#FFFFFF]">Raised $50K angel
-                                    investment
-                                    within 10 days.</h1>
-                                <p class="font-normal text-[14px] leading-[150%] text-[#FFFFFF] w-[544px]">“I pitched my
-                                    MVP the
-                                    same week I hired them. It worked flawlessly, and
-                                    investors
-                                    loved the speed.”</p>
-                            </div>
-                            <div
-                                class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
-                                <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
-                                    Founder</p>
-                                <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
-                                <h1 class="font-extrabold text-[20px] leading-[120%] text-[#FFFFFF]">Raised $50K angel
-                                    investment
-                                    within 10 days.</h1>
-                                <p class="font-normal text-[14px] leading-[150%] text-[#FFFFFF] w-[544px]">“I pitched my
-                                    MVP the
-                                    same week I hired them. It worked flawlessly, and
-                                    investors
-                                    loved the speed.”</p>
-                            </div>
-                            <div
-                                class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
+                                class=" card flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
                                 <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
                                     Founder</p>
                                 <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
@@ -249,9 +254,53 @@
                                     loved the speed.”</p>
                             </div>
                         </div>
+                        <!-- <div aria-hidden class="flex flex-row gap-[32px] group">
+                            <div
+                                class=" card flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
+                                <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
+                                    Founder</p>
+                                <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
+                                <h1 class="font-extrabold text-[20px] leading-[120%] text-[#FFFFFF]">Raised $50K angel
+                                    investment
+                                    within 10 days.</h1>
+                                <p class="font-normal text-[14px] leading-[150%] text-[#FFFFFF] w-[544px]">“I pitched my
+                                    MVP the
+                                    same week I hired them. It worked flawlessly, and
+                                    investors
+                                    loved the speed.”</p>
+                            </div>
+                            <div
+                                class="card flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
+                                <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
+                                    Founder</p>
+                                <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
+                                <h1 class="font-extrabold text-[20px] leading-[120%] text-[#FFFFFF]">Raised $50K angel
+                                    investment
+                                    within 10 days.</h1>
+                                <p class="font-normal text-[14px] leading-[150%] text-[#FFFFFF] w-[544px]">“I pitched my
+                                    MVP the
+                                    same week I hired them. It worked flawlessly, and
+                                    investors
+                                    loved the speed.”</p>
+                            </div>
+                            <div
+                                class="card flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
+                                <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
+                                    Founder</p>
+                                <img src="./images/Frame 14611.svg" class="w-[152px]" alt="">
+                                <h1 class="font-extrabold text-[20px] leading-[120%] text-[#FFFFFF]">Raised $50K angel
+                                    investment
+                                    within 10 days.</h1>
+                                <p class="font-normal text-[14px] leading-[150%] text-[#FFFFFF] w-[544px]">“I pitched my
+                                    MVP the
+                                    same week I hired them. It worked flawlessly, and
+                                    investors
+                                    loved the speed.”</p>
+                            </div>
+                        </div> -->
                     </div>
-                    <div class="flex flex-row gap-[32px]">
-                        <div class="flex flex-row gap-[32px]">
+                    <div class="flex flex-row gap-[32px] items-center justify-center">
+                        <div class="flex md:flex-row flex-col gap-[32px]">
                             <div
                                 class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
                                 <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
@@ -295,7 +344,7 @@
                                     loved the speed.”</p>
                             </div>
                         </div>
-                        <div class="flex flex-row gap-[32px]">
+                        <!-- <div class="flex flex-row gap-[32px]">
                             <div
                                 class="flex flex-col rounded-[32px] p-[32px] w-[608px] gap-[16px] border-[1px]  border-[#FFFFFF] backdrop-blur-[34px] custom-inset-shadow">
                                 <p class="font-normal text-[12px] leading-[150%] text-[#FFFFFF]">Sarah B., Healthtech
@@ -338,18 +387,18 @@
                                     investors
                                     loved the speed.”</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="flex flex-col items-center justify-center gap-[80px] px-[280px]">
+        <section class="px-[24px]">
+            <div class="mx-auto flex flex-col items-center justify-center  gap-[32px] md:gap-[80px]">
                 <h1 class="font-extrabold text-[48px] leading-[100%] text-[#FFFFFF] text-center">Frequently Asked
                     Questions
                 </h1>
-                <div class="flex flex-col gap-[32px] w-[1360px]">
+                <div class="flex flex-col gap-[32px] ">
                     <div class="faq-item flex flex-row items-start justify-center gap-4 ">
                         <div class="flex flex-col gap-4 w-full">
 
@@ -447,10 +496,11 @@
                     </div>
 
                 </div>
+            </div>
         </section>
 
-        <section>
-            <div class="flex flex-col items-center justify-center gap-[32px] px-[280px]">
+        <section class="px-[24px] md:px-[68px] xl:px-[280px]">
+            <div class="container max-w-full flex flex-col items-center justify-center gap-[32px] px-[280px]">
                 <p class="font-normal text-[24px] leading-[100%] text-[#FFFFFF]">Our Pricing</p>
                 <h1 class="">😜</h1>
                 <div class="flex flex-col  items-center justify-center gap-[32px] w-[1360px]">
@@ -512,24 +562,26 @@
             </div>
         </section>
 
-        <footer class="">
+        <footer class="px-[24px] md:px-[68px] xl:px-[280px]">
             <div
-                class="flex flex-row border-t-[1px] items-center justify-between px-[280px] py-[32px] backdrop-blur-[34px]">
+                class="container max-w-full flex flex-row  border-t-[1px] items-center justify-between px-[280px] py-[32px] backdrop-blur-[34px]">
                 <p class="font-normal text-[18px] leading-[18px] trackinig-[-0.24px] text-[#FFFFFF]">2020 The Good
                     Company. All Rights
                     Reserved</p>
-                <div class="flex flex-row items-center justify-center gap-[32px]">
-                    <div class="flex flex-row gap-[8px]">
+                <div class="flex lg:flex-row flex-col items-center justify-center gap-[32px]">
+                    <!-- <div class="flex flex-row gap-[8px]">
                         <img src="./images/Vector (2).svg" class="w-[27.64] h-[27.64] cursor-pointer" alt="">
                         <img src="./images/Facebook.svg " class="cursor-pointer" alt="">
-                    </div>
+                    </div> -->
                     <div class="flex flex-row gap-[32px]">
-                        <p class="font-normal text-[18px] leading-[100%] text-[#FFFFFF] tracking-[-0.24px]">About</p>
-                        <p class="font-normal text-[18px] leading-[100%] text-[#FFFFFF] tracking-[-0.24px]">About</p>
+                        <!-- <p class="font-normal text-[18px] leading-[100%] text-[#FFFFFF] tracking-[-0.24px]">About</p>
+                        <p class="font-normal text-[18px] leading-[100%] text-[#FFFFFF] tracking-[-0.24px]">About</p> -->
                         <p class="font-normal text-[18px] leading-[100%] text-[#FFFFFF] tracking-[-0.24px]">Terms of
                             Services</p>
                         <p class="font-normal text-[18px] leading-[100%] text-[#FFFFFF] tracking-[-0.24px]"> Privacy
                             Policy</p>
+                        <p class="font-normal text-[18px] leading-[100%] text-[#FFFFFF] tracking-[-0.24px]"> Security
+                        </p>
                     </div>
                 </div>
             </div>
