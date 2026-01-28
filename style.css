@@ -16,3 +16,8 @@ body {
     0px -3px 4px 0px #857cff66 inset,
     0px 3px 4px 0px #857cff66 inset;
 }
+p,
+h1 {
+  /* Default value, ensuring long words can break if necessary */
+  overflow-wrap: break-word;
+}
