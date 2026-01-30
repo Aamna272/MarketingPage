@@ -1,8 +1,10 @@
 @import url("https://fonts.cdnfonts.com/css/satoshi");
-@import url("https://fonts.cdnfonts.com/css/telegraf");
-
+@import url("https://fonts.cdnfonts.com/css/PP telegraf");
+#answer {
+  display: none;
+}
 button {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
 }
 body {
   background-image: url("images/03f5d5104bf86086518b6ce15f28970b5b3d58d6.png");
@@ -10,7 +12,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family:  'Telegraf ', sans-serif;";
+  font-family: "PP Telegraf ", sans-serif;
   /* max-width: 1920px; */
 }
 

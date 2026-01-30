@@ -1,20 +1,18 @@
-// function toggleFaq(button) {
-//   const faqItem = button.closest(".faq-item");
-//   const text = faqItem.querySelector(".faq-text");
-//   const icon = faqItem.querySelector(".faq-icon");
+function faqBtn(ele) {
+  const answer = ele.querySelector(".answer");
+  const icon = ele.querySelector(".button-img");
+  const isOpen = answer.classList.contains("hidden");
+  answer.classList.toggle("hidden");
 
-//   const isHidden = text.classList.contains("hidden");
+  icon.src = isOpen ? "./images/minus.svg" : "./images/plus.svg";
+}
 
-//   text.classList.toggle("hidden");
-
-//   icon.src = isHidden ? "./images/minus.svg" : "./images/plus.svg";
-// }
-const ele = document.querySelectorAll("insetShadow");
+const ele = document.querySelector(".insetShadow");
 
 ele.addEventListener("focus", () => {
   ele.classList.add("custom-inset-shadow");
 });
 
 ele.addEventListener("blur", () => {
-  inputElement.classList.remove("custom-inset-shadow");
+  ele.classList.remove("custom-inset-shadow");
 });
