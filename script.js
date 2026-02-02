@@ -1,18 +1,19 @@
 function faqBtn(ele) {
   const answer = ele.querySelector(".answer");
   const icon = ele.querySelector(".button-img");
-  const isOpen = answer.classList.contains("hidden");
-  answer.classList.toggle("hidden");
+  const isOpen = answer.classList.contains("open");
 
-  icon.src = isOpen ? "./images/minus.svg" : "./images/plus.svg";
+  if (isOpen) {
+    answer.style.maxHeight = "0px";
+    answer.classList.remove("open", "opacity-100");
+    answer.classList.add("opacity-0");
+
+    icon.src = "./images/plus.svg";
+  } else {
+    answer.style.maxHeight = answer.scrollHeight + "px";
+    answer.classList.add("open", "opacity-100");
+    answer.classList.remove("opacity-0");
+
+    icon.src = "./images/minus.svg";
+  }
 }
-
-const ele = document.querySelector(".insetShadow");
-
-ele.addEventListener("focus", () => {
-  ele.classList.add("custom-inset-shadow");
-});
-
-ele.addEventListener("blur", () => {
-  ele.classList.remove("custom-inset-shadow");
-});
