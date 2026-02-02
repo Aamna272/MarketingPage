@@ -17,3 +17,24 @@ function faqBtn(ele) {
     icon.src = "./images/minus.svg";
   }
 }
+
+const navbar = document.getElementById("navbar");
+const navImg = document.getElementById("navImg");
+const scrollThreshold = 10;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > scrollThreshold) {
+    navbar.classList.remove("-translate-y-full");
+    navImg.classList.remove("sm:hidden");
+    navbar.classList.add("translate-y-0");
+    navbar.classList.add("mt-8");
+    navbar.classList.add("md:mt-[46.25px]");
+  } else {
+    navbar.classList.remove("translate-y-0,mt-8 ,md:mt-[46.25px]");
+
+    navbar.classList.remove("mt-8");
+    navbar.classList.remove("md:mt-[46.25px]");
+
+    navbar.classList.add("-translate-y-full");
+  }
+});
