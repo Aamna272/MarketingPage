@@ -18,15 +18,29 @@ function faqBtn(ele) {
   }
 }
 
+// const navbar = document.querySelector(".navbar");
+// const scrollThreshold = 1000;
+
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > scrollThreshold) {
+//     // alert("threshold reached");
+//     navbar.classList.remove("hidden");
+//     navbar.classList.add("flex");
+//   } else {
+//     navbar.classList.remove("flex");
+//     navbar.classList.add("hidden");
+//   }
+// });
 const navbar = document.getElementById("navbar");
-const scrollThreshold = 1000;
+const scrollThreshold = 500;
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > scrollThreshold) {
-    navbar.classList.remove("hidden");
-    navbar.classList.add("flex");
+    navbar.classList.remove("-translate-y-full");
+    navbar.classList.add("-translate-y-0");
+    navbar.classList.add("mt-8", "md:mt-11");
   } else {
-    navbar.classList.remove("flex");
-    navbar.classList.add("hidden");
+    navbar.classList.remove("-translate-y-0", "mt-8", "md:mt-11");
+    navbar.classList.add("-translate-y-full");
   }
 });
