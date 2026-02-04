@@ -23,11 +23,10 @@ const scrollThreshold = 1000;
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > scrollThreshold) {
-    navbar.classList.remove("-translate-y-full");
-    navbar.classList.add("translate-y-0");
-    navbar.classList.add("mt-8", "md:mt-[46.25px]");
+    navbar.classList.remove("hidden");
+    navbar.classList.add("flex");
   } else {
-    navbar.classList.remove("translate-y-0", "mt-8", "md:mt-[46.25px]");
-    navbar.classList.add("-translate-y-full");
+    navbar.classList.remove("flex");
+    navbar.classList.add("hidden");
   }
 });
