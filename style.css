@@ -13,7 +13,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Telegraf ", sans-serif;
-  
+
   /* max-width: 1920px; */
 }
 
@@ -25,6 +25,17 @@ body {
     0px -3px 4px 0px #a8a2ff66 inset,
     0px -3px 4px 0px #857cff66 inset,
     0px 3px 4px 0px #857cff66 inset;
+}
+
+.bg-silver-gradient {
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #c0c0c0 20%,
+    #e8e8e8 50%,
+    /* #c0c0c0 50%, */ #c0c0c0 80%,
+    transparent 100%
+  );
 }
 /**
 * @license
