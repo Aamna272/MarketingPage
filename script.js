@@ -31,16 +31,19 @@ function faqBtn(ele) {
 //     navbar.classList.add("hidden");
 //   }
 // });
-const navbar = document.getElementById("navbar");
-const scrollThreshold = 500;
+
+let isVisible = false;
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > scrollThreshold) {
+  if (window.scrollY > 600 && !isVisible) {
     navbar.classList.remove("-translate-y-full");
-    navbar.classList.add("-translate-y-0");
-    navbar.classList.add("mt-8", "md:mt-11");
-  } else {
-    navbar.classList.remove("-translate-y-0", "mt-8", "md:mt-11");
+    navbar.classList.add("translate-y-0", "mt-8", "md:mt-11");
+    isVisible = true;
+  }
+
+  if (window.scrollY <= 500 && isVisible) {
+    navbar.classList.remove("translate-y-0", "mt-8", "md:mt-11");
     navbar.classList.add("-translate-y-full");
+    isVisible = false;
   }
 });
