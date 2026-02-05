@@ -50,6 +50,8 @@ window.addEventListener("scroll", () => {
 
 function sendEmail() {
   const button = document.getElementById("formBtn");
+  let email = document.querySelector("#email");
+  let message = document.querySelector("#message");
   const templateParams = {
     email: document.querySelector("#email").value,
     message: document.querySelector("#message").value,
@@ -57,7 +59,11 @@ function sendEmail() {
   emailjs
     .send("service_qw6n2pp", "template_fmxh8z9", templateParams)
     .then(() => {
-      button.textContent = "Email Sent";
-      button.disabled = "true";
+      if (username.value === "" && email.value === "") {
+        button.disabled = "true";
+      } else {
+        button.textContent = "Email Sent";
+        button.disabled = "true";
+      }
     });
 }
