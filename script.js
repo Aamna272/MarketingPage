@@ -49,11 +49,12 @@ window.addEventListener("scroll", () => {
 });
 
 function sendEmail() {
+  const button = document.getElementById("formBtn");
   const templateParams = {
     email: document.querySelector("#email").value,
     message: document.querySelector("#message").value,
   };
   emailjs
     .send("service_qw6n2pp", "template_fmxh8z9", templateParams)
-    .then(() => alert("email sent").catch(() => alert("email not sent")));
+    .then(() => (button.textContent = "Email Sent"));
 }
