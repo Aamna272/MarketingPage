@@ -10,6 +10,15 @@
     <script src="./script.js"></script>
     <link rel="script" href="">
     <link href="https://db.onlinewebfonts.com/c/cd7b05ba22e73021e0a390f532a72589?family=PP+Telegraf" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ZEioMaFz503fBgzBk",
+            });
+        })();
+    </script>
 
 </head>
 
@@ -522,16 +531,16 @@
                     </div>
 
                     <div class="flex flex-col gap-4">
-                        <input type="email" placeholder="Email" onfocus="addInsetShadow()"
+                        <input type="email" id="email" name="email" placeholder="Email" onfocus="addInsetShadow()"
                             class="insetShadow w-full h-14 sm:h-16 text-white placeholder-slate-300 focus:outline-none
                             bg-[#FFFFFF0A]  py-[16px] px-[24px] rounded-[16px] border  border-[#FFFFFF33] mb-[16px] backdrop-blur-[17px] focus:custom-inset-shadow" />
 
-                        <textarea placeholder="Message" rows="5"
+                        <textarea placeholder="Message" rows="5" id="message" name="message" required
                             class="w-full rounded-xl py-[16px] px-[24px] bg-[#FFFFFF0A] border border-[#FFFFFF33] text-white placeholder-slate-300 focus:outline-none backdrop-blur-[17px] focus:custom-inset-shadow"></textarea>
                     </div>
 
                     <div class="flex justify-end">
-                        <button type="submit" class="flex items-center gap-2 px-8 py-4 rounded-full cursor-pointer text-white font-bold text-base 
+                        <button type="button" onclick="sendEmail()" class="flex items-center gap-2 px-8 py-4 rounded-full cursor-pointer text-white font-bold text-base 
                             sm:text-lg custom-inset-shadow hover:scale-105 transition-transform duration-300">
                             Submit
                             <img src="./images/Vector.svg" alt="" />
