@@ -35,7 +35,7 @@ function faqBtn(ele) {
 let isVisible = false;
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 600 && !isVisible) {
+  if (window.scrollY > 500 && !isVisible) {
     navbar.classList.remove("-translate-y-full");
     navbar.classList.add("translate-y-0", "mt-8", "md:mt-11");
     isVisible = true;
