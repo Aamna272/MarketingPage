@@ -56,5 +56,8 @@ function sendEmail() {
   };
   emailjs
     .send("service_qw6n2pp", "template_fmxh8z9", templateParams)
-    .then(() => (button.textContent = "Email Sent"));
+    .then(() => {
+      button.textContent = "Email Sent";
+      button.disabled = "true";
+    });
 }
