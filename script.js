@@ -48,14 +48,29 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const validateEmail = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    );
+};
+
 function sendEmail() {
   const button = document.getElementById("formBtn");
-  let email = document.querySelector("#email");
-  let message = document.querySelector("#message");
+  let email = document.querySelector("#email").value.trim();
+  let message = document.querySelector("#message").value.trim();
+  let errorMessage = document.querySelector("#error-message");
+
+  if (!validateEmail(email) || !email || !message) {
+    errorMessage.classList.remove("hidden");
+    return;
+  }
   const templateParams = {
     email: document.querySelector("#email").value,
     message: document.querySelector("#message").value,
   };
+
   emailjs
     .send("service_qw6n2pp", "template_fmxh8z9", templateParams)
     .then(() => {
